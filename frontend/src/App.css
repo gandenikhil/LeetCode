@@ -1,0 +1,130 @@
+/* Replace the existing login-related styles in your App.css */
+
+/* Container styles */
+.login-container {
+  min-height: 100vh;
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Card styles */
+.login-card {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+  border-radius: 1rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  height: auto;
+  margin: 0 !important;
+}
+
+.login-card .card-body {
+  padding: 2.5rem !important;
+}
+
+/* Input styles */
+.login-input {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  color: #333 !important;
+  height: 48px;
+}
+
+.login-input:focus {
+  background-color: #ffffff !important;
+  border-color: #1266f1 !important;
+  box-shadow: 0 0 0 0.2rem rgba(18, 102, 241, 0.25) !important;
+}
+
+/* Button styles */
+.login-btn {
+  background: linear-gradient(45deg, #1a237e, #0d47a1) !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  letter-spacing: 0.5px;
+  height: 48px !important;
+}
+
+/* Right panel styles */
+.right-panel {
+  background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%) !important;
+  height: 100%;
+  padding: 3rem !important;
+}
+
+.right-panel h1 {
+  font-size: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.right-panel .lead {
+  font-size: 1.1rem !important;
+  opacity: 0.9;
+}
+
+.right-panel .features p {
+  font-size: 1rem !important;
+  margin-bottom: 1rem !important;
+  opacity: 0.9;
+}
+
+/* Text colors */
+.text-dark {
+  color: #333 !important;
+}
+
+.text-dark-emphasis {
+  color: #666 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .login-container {
+    padding: 1rem;
+  }
+  
+  .right-panel {
+    padding: 2rem !important;
+  }
+  
+  .right-panel h1 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    margin: 1rem !important;
+  }
+  
+  .login-card .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .right-panel {
+    display: none !important; /* Hide the right panel on mobile */
+  }
+}
+
+/* App.css additions */
+.loading-container {
+  background: linear-gradient(135deg, #1a1c2e 0%, #2a2d43 100%);
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}

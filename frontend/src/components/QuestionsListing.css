@@ -1,0 +1,117 @@
+/* Questions page specific styles */
+.questions-page-container {
+    background-color: hsl(218, 41%, 15%);
+    min-height: 100vh;
+  }
+  
+  .questions-filter-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    transition: all 0.3s ease;
+  }
+  
+  .questions-filter-section h6 {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+  }
+  
+  .questions-filter-chip {
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: rgba(8, 8, 8, 0.9);
+
+  }
+  
+  .questions-filter-chip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .questions-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .questions-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+  
+  .questions-card-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+  }
+  
+  .questions-card-description {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .questions-card-stats {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+  }
+  
+  .questions-solve-btn {
+    background: linear-gradient(45deg, #4a00e0, #8e2de2);
+    border: none;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .questions-solve-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 0, 224, 0.3);
+  }
+  
+  .questions-pagination .page-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+  }
+  
+  .questions-pagination .page-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .questions-pagination .page-item.active .page-link {
+    background: linear-gradient(45deg, #4a00e0, #8e2de2);
+    border-color: transparent;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .questions-card {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .questions-card-stats {
+      text-align: left;
+      margin-top: 1rem;
+    }
+    
+    .questions-filter-section {
+      margin-bottom: 1.5rem;
+    }
+  }

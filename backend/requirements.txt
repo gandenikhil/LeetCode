@@ -1,0 +1,6 @@
+firebase-admin
+Flask
+Flask-Cors
+python-dotenv
+pyrebase4
+Werkzeug==2.2.2

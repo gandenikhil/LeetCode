@@ -1,0 +1,132 @@
+/* userProfile.css */
+.profile-page-container {
+  background: linear-gradient(135deg, #1a1c2e 0%, #2a2d43 100%);
+  min-height: 100vh;
+  color: #e2e8f0;
+  padding-top: 2rem;
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: all 0.3s ease;
+  border-radius: 15px !important;
+  overflow: hidden;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+}
+
+.profile-avatar-container {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar-initials {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-level-badge {
+  background: linear-gradient(45deg, #6366f1, #8b5cf6) !important;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.stat-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.profile-achievement-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-achievement-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.profile-achievement-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bg-light-hover {
+  transition: all 0.3s ease;
+}
+
+.bg-light-hover:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Chart customization */
+.recharts-default-tooltip {
+  background-color: rgba(26, 28, 46, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recharts-tooltip-item {
+  color: #e2e8f0 !important;
+}
+
+.recharts-text {
+  fill: #e2e8f0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-page-container {
+    padding: 1rem;
+  }
+  
+  .profile-avatar-container {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .stat-item {
+    padding: 1rem !important;
+  }
+  
+  .profile-achievement-card {
+    padding: 1rem !important;
+  }
+}

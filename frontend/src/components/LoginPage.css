@@ -1,0 +1,90 @@
+/* LoginPage.css */
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0a2647, #144272);
+}
+
+.login-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.login-input {
+  background-color: transparent;
+}
+
+.login-btn {
+  background-color: #1e3a8a;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-1px);
+}
+
+/* OTP Section Styles */
+.otp-section {
+  padding: 1rem 0;
+}
+
+.otp-input-group {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 1.5rem 0;
+}
+
+.otp-input {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.otp-input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.otp-input:disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.divider p {
+  padding: 0 1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+#recaptcha-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  visibility: hidden; 
+}
