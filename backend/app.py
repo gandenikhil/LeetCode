@@ -47,7 +47,8 @@ def check_credentials():
         if not email or not password:
             return jsonify({
                 'success': False,
-                'error': 'Email and password are required'
+                'error': 'Email and password are required',
+                'user_email': email
             }), 400
 
         try:
@@ -59,7 +60,8 @@ def check_credentials():
             if not user_doc.exists:
                 return jsonify({
                     'success': False,
-                    'error': 'User profile not found'
+                    'error': 'User profile not found',
+                    'user_email': email
                 }), 404
 
             user_data = user_doc.to_dict()
